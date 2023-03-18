@@ -1,4 +1,4 @@
-import { Box, Button, Card, CardBody, CardFooter, CardHeader, Center, Heading, Spacer, Stack, Text } from '@chakra-ui/react';
+import { Box, Button, Card, CardBody, CardFooter, CardHeader, Center, Flex, Heading, Spacer, Stack, Text } from '@chakra-ui/react';
 import { db } from '@/Firebase/init-firebase';
 import { collection, getDocs} from 'firebase/firestore';
 import React, { useEffect, useState } from 'react'
@@ -6,9 +6,7 @@ import React, { useEffect, useState } from 'react'
 export default function Details() {
   const [userDetails,setuserDetails]=useState([]);
   const [display,setdisplay]=useState('none')
-  
- 
-
+  const [view,setview]=useState('View')
   //extract Data
   useEffect(()=>{
     getDetails()
@@ -29,23 +27,31 @@ export default function Details() {
   return (
    
      <div align='center'>
-      
       {userDetails.map(userDetail=>
       <div>
-        <Card align='center' maxW={'md'} w={'full'}>
+          <Card align='center' maxW={'sm'} w={'full'}>
           <CardHeader>
-             <Heading size='md'> {userDetail.id}</Heading>
+             <Heading size='md'>{userDetail.id}</Heading>
           </CardHeader>
           <CardBody key={userDetail.id} display={display}>
-            <Text><b ml={5}>Email/UserName:</b> {userDetail.data.email}</Text>
-            <Text><b ml={5}>Password: </b>{userDetail.data.password}</Text>
+            <Text><b>Email/UserName:</b> {userDetail.data.email}</Text>
+            <Text><b>Password: </b>{userDetail.data.password}</Text>
           </CardBody>
           <CardFooter>
-            <Button onClick={()=> setdisplay('')} colorScheme='blue'>View Details</Button>
+            <Button 
+            onClick={()=>{
+             (display=='none')?  setdisplay(''):setdisplay('none');
+             (view=='View')? setview('Hide'):setview('View')
+            } } colorScheme='blue'>
+               {view} Details
+            </Button>
+            
           </CardFooter>
         </Card>
-  <br/></div>
+        <br/></div>
     )}
+   
+   
       </div>
       
     
