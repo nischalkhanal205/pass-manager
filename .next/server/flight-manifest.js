@@ -155,58 +155,6 @@ self.__RSC_MANIFEST={
         ],
         "async": false
       }
-    },
-    "(app-client)/./src/app/signin/page.js": {
-      "": {
-        "id": "(sc_client)/./src/app/signin/page.js",
-        "name": "",
-        "chunks": [
-          "app/signin/page:app/signin/page"
-        ],
-        "async": false
-      },
-      "*": {
-        "id": "(sc_client)/./src/app/signin/page.js",
-        "name": "*",
-        "chunks": [
-          "app/signin/page:app/signin/page"
-        ],
-        "async": false
-      },
-      "default": {
-        "id": "(sc_client)/./src/app/signin/page.js",
-        "name": "default",
-        "chunks": [
-          "app/signin/page:app/signin/page"
-        ],
-        "async": false
-      }
-    },
-    "(app-client)/./src/app/signup/page.js": {
-      "": {
-        "id": "(sc_client)/./src/app/signup/page.js",
-        "name": "",
-        "chunks": [
-          "app/signup/page:app/signup/page"
-        ],
-        "async": false
-      },
-      "*": {
-        "id": "(sc_client)/./src/app/signup/page.js",
-        "name": "*",
-        "chunks": [
-          "app/signup/page:app/signup/page"
-        ],
-        "async": false
-      },
-      "default": {
-        "id": "(sc_client)/./src/app/signup/page.js",
-        "name": "default",
-        "chunks": [
-          "app/signup/page:app/signup/page"
-        ],
-        "async": false
-      }
     }
   },
   "__edge_ssr_module_mapping__": {},
@@ -376,58 +324,6 @@ self.__RSC_MANIFEST={
       "name": "default",
       "chunks": [
         "app-client-internals:app-client-internals"
-      ],
-      "async": false
-    }
-  },
-  "C:\\Users\\Acer\\Desktop\\Nischal\\pass-manager\\src\\app\\signin\\page.js": {
-    "": {
-      "id": "(app-client)/./src/app/signin/page.js",
-      "name": "",
-      "chunks": [
-        "app/signin/page:app/signin/page"
-      ],
-      "async": false
-    },
-    "*": {
-      "id": "(app-client)/./src/app/signin/page.js",
-      "name": "*",
-      "chunks": [
-        "app/signin/page:app/signin/page"
-      ],
-      "async": false
-    },
-    "default": {
-      "id": "(app-client)/./src/app/signin/page.js",
-      "name": "default",
-      "chunks": [
-        "app/signin/page:app/signin/page"
-      ],
-      "async": false
-    }
-  },
-  "C:\\Users\\Acer\\Desktop\\Nischal\\pass-manager\\src\\app\\signup\\page.js": {
-    "": {
-      "id": "(app-client)/./src/app/signup/page.js",
-      "name": "",
-      "chunks": [
-        "app/signup/page:app/signup/page"
-      ],
-      "async": false
-    },
-    "*": {
-      "id": "(app-client)/./src/app/signup/page.js",
-      "name": "*",
-      "chunks": [
-        "app/signup/page:app/signup/page"
-      ],
-      "async": false
-    },
-    "default": {
-      "id": "(app-client)/./src/app/signup/page.js",
-      "name": "default",
-      "chunks": [
-        "app/signup/page:app/signup/page"
       ],
       "async": false
     }
