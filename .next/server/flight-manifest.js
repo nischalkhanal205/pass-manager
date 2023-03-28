@@ -155,6 +155,32 @@ self.__RSC_MANIFEST={
         ],
         "async": false
       }
+    },
+    "(app-client)/./src/app/user/page.js": {
+      "": {
+        "id": "(sc_client)/./src/app/user/page.js",
+        "name": "",
+        "chunks": [
+          "app/user/page:app/user/page"
+        ],
+        "async": false
+      },
+      "*": {
+        "id": "(sc_client)/./src/app/user/page.js",
+        "name": "*",
+        "chunks": [
+          "app/user/page:app/user/page"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./src/app/user/page.js",
+        "name": "default",
+        "chunks": [
+          "app/user/page:app/user/page"
+        ],
+        "async": false
+      }
     }
   },
   "__edge_ssr_module_mapping__": {},
@@ -324,6 +350,32 @@ self.__RSC_MANIFEST={
       "name": "default",
       "chunks": [
         "app-client-internals:app-client-internals"
+      ],
+      "async": false
+    }
+  },
+  "C:\\Users\\Acer\\Desktop\\Nischal\\pass-manager\\src\\app\\user\\page.js": {
+    "": {
+      "id": "(app-client)/./src/app/user/page.js",
+      "name": "",
+      "chunks": [
+        "app/user/page:app/user/page"
+      ],
+      "async": false
+    },
+    "*": {
+      "id": "(app-client)/./src/app/user/page.js",
+      "name": "*",
+      "chunks": [
+        "app/user/page:app/user/page"
+      ],
+      "async": false
+    },
+    "default": {
+      "id": "(app-client)/./src/app/user/page.js",
+      "name": "default",
+      "chunks": [
+        "app/user/page:app/user/page"
       ],
       "async": false
     }
