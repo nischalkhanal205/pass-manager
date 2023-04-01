@@ -1,21 +1,18 @@
 import {
-  Box,
   Button,
   Card,
   CardBody,
   CardFooter,
   CardHeader,
-  Center,
-  Flex,
   Heading,
-  Spacer,
-  Stack,
   Text,
 } from "@chakra-ui/react";
+import { FaTrash, FaEye, FaEdit } from "react-icons/fa";
 import { db } from "@/Firebase/init-firebase";
-import { collection, getDocs } from "firebase/firestore";
+import { collection, getDocs, deleteDoc } from "firebase/firestore";
 import React, { useEffect, useState } from "react";
 import UpdateDetails from "./UpdateDetails";
+import DeleteDetails from "./DeleteDetails";
 
 export default function Details() {
   const [userDetails, setUserDetails] = useState([]);
@@ -45,9 +42,17 @@ export default function Details() {
       console.log(error.message);
     }
   }
+  // delete functions
 
   return (
-    <div align="center">
+    <div
+      align="center"
+      style={{
+        display: "flex",
+        flexWrap: "wrap",
+        justifyContent: "space-evenly",
+      }}
+    >
       {userDetails.map((userDetail) => (
         <div key={userDetail.id}>
           <Card align="center" maxW={"sm"} w={"full"}>
@@ -67,6 +72,7 @@ export default function Details() {
             )}
             <CardFooter>
               <Button
+                mr={5}
                 onClick={() => {
                   setDetailsIndex((detailsIndex) =>
                     detailsIndex === userDetail.id ? null : userDetail.id
@@ -76,9 +82,10 @@ export default function Details() {
                 }}
                 colorScheme="blue"
               >
-                {view} Details
+                <FaEye />
               </Button>
               <Button
+                mr={5}
                 onClick={() => {
                   seteditIndex((editIndex) =>
                     editIndex === userDetail.id ? null : userDetail.id
@@ -86,13 +93,17 @@ export default function Details() {
                   // seteditdetails(editIndex === userDetail.id ? true : false);
                 }}
               >
-                Edit Details
+                <FaEdit />
               </Button>
+              <DeleteDetails userDetail={userDetail} />
             </CardFooter>
           </Card>
           <br />
           {editIndex === userDetail.id && (
-            <UpdateDetails seteditIndex={seteditIndex} userDetail={userDetail} />
+            <UpdateDetails
+              seteditIndex={seteditIndex}
+              userDetail={userDetail}
+            />
           )}
         </div>
       ))}

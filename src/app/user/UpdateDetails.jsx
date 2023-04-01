@@ -1,30 +1,27 @@
 import React, { useState } from "react";
 import { db } from "@/Firebase/init-firebase";
-import { setDoc, doc } from "firebase/firestore";
+import { setDoc, doc, updateDoc } from "firebase/firestore";
 import {
-  Flex,
   Box,
   FormControl,
   FormLabel,
   Input,
-  Checkbox,
   Stack,
-  Link,
   Button,
   Heading,
-  Text,
   useColorModeValue,
 } from "@chakra-ui/react";
 
-export default function UpdateDetails({seteditIndex,userDetail}) {
+export default function UpdateDetails({ seteditIndex, userDetail }) {
   const [data, setdata] = useState({
     email: "",
     password: "",
   });
-  const weblink=userDetail.id;
-  async function add() {
+  const weblink = userDetail.id;
+  async function update() {
     try {
-      await setDoc(doc(db, "Nischal", weblink), data);
+      // await setDoc(doc(db, "Nischal", weblink), data);
+      await updateDoc(doc(db, "Nischal", weblink), data);
     } catch (error) {
       console.log(error.message);
     }
@@ -43,19 +40,30 @@ export default function UpdateDetails({seteditIndex,userDetail}) {
           <form
             onSubmit={(e) => {
               e.preventDefault();
-              add();
+              update();
+              seteditIndex(false)
             }}
             spacing={4}
           >
             <FormControl id="email">
               <FormLabel>Email address</FormLabel>
-              <Input value={data.email} onChange={(e)=>setdata({email:e.target.value})} type="email" />
+              <Input
+                value={data.email}
+                onChange={(e) => setdata({ email: e.target.value })}
+                type="email"
+              />
             </FormControl>
             <FormControl id="password">
               <FormLabel>Password</FormLabel>
-              <Input value={data.password} onChange={(e)=>setdata({...data,password:e.target.value})} type="password" />
+              <Input
+                value={data.password}
+                onChange={(e) => setdata({ ...data, password: e.target.value })}
+                type="password"
+              />
             </FormControl>
-            <Button type="submit" onClick={()=>seteditIndex(false)}>Edit</Button>
+            <Button type="submit">
+              Edit
+            </Button>
           </form>
         </Box>
       </Stack>

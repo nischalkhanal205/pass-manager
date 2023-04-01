@@ -1,27 +1,27 @@
 {
   "__ssr_module_mapping__": {
-    "(app-client)/./src/app/page.js": {
+    "(app-client)/./src/app/user/page.js": {
       "": {
-        "id": "(sc_client)/./src/app/page.js",
+        "id": "(sc_client)/./src/app/user/page.js",
         "name": "",
         "chunks": [
-          "app/page:app/page"
+          "app/user/page:app/user/page"
         ],
         "async": false
       },
       "*": {
-        "id": "(sc_client)/./src/app/page.js",
+        "id": "(sc_client)/./src/app/user/page.js",
         "name": "*",
         "chunks": [
-          "app/page:app/page"
+          "app/user/page:app/user/page"
         ],
         "async": false
       },
       "default": {
-        "id": "(sc_client)/./src/app/page.js",
+        "id": "(sc_client)/./src/app/user/page.js",
         "name": "default",
         "chunks": [
-          "app/page:app/page"
+          "app/user/page:app/user/page"
         ],
         "async": false
       }
@@ -156,28 +156,28 @@
         "async": false
       }
     },
-    "(app-client)/./src/app/user/page.js": {
+    "(app-client)/./src/app/page.js": {
       "": {
-        "id": "(sc_client)/./src/app/user/page.js",
+        "id": "(sc_client)/./src/app/page.js",
         "name": "",
         "chunks": [
-          "app/user/page:app/user/page"
+          "app/page:app/page"
         ],
         "async": false
       },
       "*": {
-        "id": "(sc_client)/./src/app/user/page.js",
+        "id": "(sc_client)/./src/app/page.js",
         "name": "*",
         "chunks": [
-          "app/user/page:app/user/page"
+          "app/page:app/page"
         ],
         "async": false
       },
       "default": {
-        "id": "(sc_client)/./src/app/user/page.js",
+        "id": "(sc_client)/./src/app/page.js",
         "name": "default",
         "chunks": [
-          "app/user/page:app/user/page"
+          "app/page:app/page"
         ],
         "async": false
       }
@@ -189,28 +189,28 @@
       "static/css/app/layout.css"
     ]
   },
-  "C:\\Users\\Acer\\Desktop\\Nischal\\pass-manager\\src\\app\\page.js": {
+  "C:\\Users\\Acer\\Desktop\\Nischal\\pass-manager\\src\\app\\user\\page.js": {
     "": {
-      "id": "(app-client)/./src/app/page.js",
+      "id": "(app-client)/./src/app/user/page.js",
       "name": "",
       "chunks": [
-        "app/page:app/page"
+        "app/user/page:app/user/page"
       ],
       "async": false
     },
     "*": {
-      "id": "(app-client)/./src/app/page.js",
+      "id": "(app-client)/./src/app/user/page.js",
       "name": "*",
       "chunks": [
-        "app/page:app/page"
+        "app/user/page:app/user/page"
       ],
       "async": false
     },
     "default": {
-      "id": "(app-client)/./src/app/page.js",
+      "id": "(app-client)/./src/app/user/page.js",
       "name": "default",
       "chunks": [
-        "app/page:app/page"
+        "app/user/page:app/user/page"
       ],
       "async": false
     }
@@ -354,28 +354,28 @@
       "async": false
     }
   },
-  "C:\\Users\\Acer\\Desktop\\Nischal\\pass-manager\\src\\app\\user\\page.js": {
+  "C:\\Users\\Acer\\Desktop\\Nischal\\pass-manager\\src\\app\\page.js": {
     "": {
-      "id": "(app-client)/./src/app/user/page.js",
+      "id": "(app-client)/./src/app/page.js",
       "name": "",
       "chunks": [
-        "app/user/page:app/user/page"
+        "app/page:app/page"
       ],
       "async": false
     },
     "*": {
-      "id": "(app-client)/./src/app/user/page.js",
+      "id": "(app-client)/./src/app/page.js",
       "name": "*",
       "chunks": [
-        "app/user/page:app/user/page"
+        "app/page:app/page"
       ],
       "async": false
     },
     "default": {
-      "id": "(app-client)/./src/app/user/page.js",
+      "id": "(app-client)/./src/app/page.js",
       "name": "default",
       "chunks": [
-        "app/user/page:app/user/page"
+        "app/page:app/page"
       ],
       "async": false
     }
